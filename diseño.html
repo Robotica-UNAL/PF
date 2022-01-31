@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Diseño</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/industrial-robot.png" rel="icon">
+  <link href="assets/img/industrial-robot.png" rel="icon">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,600,600i,700,700i|Krona+One:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>  <img src="assets/img/industrial-robot.png" > Proyecto A3</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active " href="diseño.html">Diseño</a></li>
+          <li><a href="seleccion.html">Selección de robots</a></li>
+          <li><a href="index.html">Selección de herramientas</a></li>
+          <li><a href="team.html">Integrantes</a></li>
+          <li><a href="asignatura.html">Asignatura</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="breadcrumbs">
+    </section>
+    <div class="section-title" data-aos="fade-up">
+      <h1>Diseño de la Celda Robotizada</h1>
+    </div>
+    
+    <div class="container" data-aos="fade-up">
+      <ol>
+        <li>Se realizó un estudio preliminar de la planta y la secuencia mostrada en el video "Grenzebach | Automatic Front, Side and Rear Glass Decking at Sprinter Assembly Line", con el cual se lograron identificar características propias del proceso, cantidad de robots utilizados, protocolo de funcionamiento y de seguridad presentes en la celda.
+        </li>
+        <br>
+        <li>Se realizó una identificación y caracterización de los procesos realizados por la celda propuesta, verificando el flujo de material y el espacio de trabajo utilizado.</li>
+        <br>
+        <li>Utilizando la información de los procesos se realizó un plano base de como se pretendía organizar la  celda, intentando asemejar el modelo propuesto en el video ya mencionado.</li>
+        <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+          <div class="container">
+          <img center src="assets/img/celda.png" class="img-fluid" alt="">
+        <p>Para eso se sigue un flujo de trabajo se puede describir en tres etapas principales, la primera tiene como objetivo aplicar el potenciador del pegamento, la segunda aplicar el pegamento y la tercera es la operación de instalación de los vidrios en la van. Cada etapa se describe a detalle a continuación.</p>
+        <ol type="a">
+          <li>Aplicar potenciador: En esta etapa los vidrios traseros entran a la estación de trabajo por medio de un conveyor, donde los vidrios se encuentran fijos en una posición gracias a un soporte que los mantiene vertical. Cuando el par de vidrios se encuentra al final del conveyor el primer robot utiliza un gripper de vacío para llevarlos hasta el espacio de trabajo del segundo Robot donde se encarga de aplicar el potenciador del pegamento usando trayectorias rectas y circulares. Por último, el primer robot posiciona el par de vidrios verticalmente en el segundo conveyor.</li>
+          <li>Aplicar pegante: En esta etapa de nuevo el par de vidrios al llegar al final del recorrido del conveyor son sujetados por el tercer robot con un gripper de vacío para después aplicar el pegante usando un dispensador de pegamento que está fijo en un poste. En este paso la trayectoria para aplicar el pegamento lo hacen el par de vidrios, mientras que en la primera etapa la trayectoria la realizaba el segundo robot.</li>
+          <li>Instalación de vidrios: En esta etapa el tercer robot ensambla los dos vidrios traseros a la van, la cual se desplaza en un conveyor especializado que se detiene para su respectivo ensamble y de esta forma continuar con su proceso de fabricación.</li>
+        </ol>
+      </div>
+      </section>
+        
+        <li>Finalmente, se implementa el diseño desarrollado en Robotstudio y se evalúa su factibilidad para efectuar posibles correcciones y llegar a un layout definitivo que permita un buen flujo del material y desempeño del proceso. </li>
+        <br>
+        <li>En el layout definitivo se incluyen los requerimientos de seguridad correspondientes en donde se delimitan las áreas de trabajo de los robots y el flujo de material para prevenir colisiones entre los elementos en movimiento y limitar el acceso del personal mientras se ejecutan las tareas para prevenir accidentes. Estas vallas cuentan con puertas para acceder de manera segura a la celda y realizar el respectivo mantenimiento de los elementos de la celda. Adicionalmente, cuentan con ventanas para la supervisión del proceso. Pensando en la mejor disposición, los elementos fijos de la celda son ubicados en la parte exterior de las vallas de seguridad  para un fácil acceso, estos elementos son los controladores, los flexpendant, y los equipos de dispensación de los adhesivos, que incluyen una bomba y un depósito de material. </li>
+      </ol>
+    </div>
+
+
+    <section class="why-us" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <h1>GUI</h1>
+      <img center src="assets/img/gui.png" class="img-fluid" alt="">
+      </div>
+    </section>
+
+
+  </main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+  <div class="container">
+    <div class="credits">
+      Repositorio de Trabajo en Github (Enlace)
+      <a href="https://github.com/Robotica-2021/Proyecto-A3" class="github"><i class="bx bxl-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
