@@ -25,7 +25,7 @@ img.rounded-corners {
 }
 
 a {
-    color: #d5b64f;
+    color: #5272ff;
     text-decoration: none;
 }
 
@@ -415,10 +415,11 @@ ul.c3 {
 }
 
 #hero h2 {
-    color: #fff;
     margin-bottom: 30px;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 58px;
+    font-weight: 550;
+    color: rgb(62, 110, 134);
+    text-shadow: 1px 0 0 rgb(14, 15, 20), -2px 0 0 rgb(20, 18, 18), 0 2px 0 rgb(17, 17, 19), 0 -2px 0 rgb(31, 26, 26), 1px 1px rgb(33, 35, 145), -1px -1px 0 rgb(15, 14, 14), 1px -1px 0 rgb(19, 17, 17), -1px 1px 0 rgb(15, 13, 13);
 }
 
 #hero p {
@@ -593,6 +594,13 @@ section {
 .section-title {
     text-align: center;
     padding-bottom: 30px;
+}
+
+h2.titlemain {
+    font-size: 88px;
+    color: rgb(49, 88, 107);
+    /*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    /* border-color: #2d0b0b;*/
 }
 
 .section-title h2 {
