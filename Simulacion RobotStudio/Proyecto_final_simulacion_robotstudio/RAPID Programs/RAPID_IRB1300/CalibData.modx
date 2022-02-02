@@ -1,0 +1,8 @@
+MODULE CalibData
+    PERS tooldata EF_gripper_peq:=[TRUE,[[-65,410,100],[1,0,0,0]],[7,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata WO_inyectora:=[FALSE,TRUE,"",[[-442.76,-1565.6,-744.943],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    TASK PERS wobjdata WO_Bushings:=[FALSE,TRUE,"",[[-3612,-1208,-2087],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    PERS tooldata EF_Gripper:=[TRUE,[[35.02,410.021,99.931],[1,0,0,0]],[5,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata WO_recogida_bush:=[FALSE,TRUE,"",[[-355.024,1.56735,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    TASK PERS wobjdata WO_dejada_bush:=[FALSE,TRUE,"",[[-355.024,1.56735,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+ENDMODULE

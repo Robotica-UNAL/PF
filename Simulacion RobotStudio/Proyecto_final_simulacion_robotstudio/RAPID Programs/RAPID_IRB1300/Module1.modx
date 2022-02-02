@@ -1,0 +1,46 @@
+MODULE Module1
+    CONST robtarget Target_10:=[[997.288266107,-806.063872186,44.949123094],[0.707105059,0.707105059,-0.001560841,-0.001560841],[-1,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_3_2:=[[1341.531107742,-655.105554555,766.283818906],[0.707105059,0.707105059,-0.001560841,-0.001560841],[-1,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_3:=[[997.961406572,-653.58877787,44.949123094],[0.707105059,0.707105059,-0.001560841,-0.001560841],[-1,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20_2_2:=[[504.816353763,1470.329241446,819.238285293],[0.707105059,0.001560841,0.707105059,-0.001560841],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20_2:=[[504.816353763,1470.329241446,-206.038679103],[0.707105059,0.001560841,0.707105059,-0.001560841],[1,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[702.432844712,1469.456812693,-206.038679103],[0.707105059,0.001560841,0.707105059,-0.001560841],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20_2_2_2:=[[1395.18413534,904.392394954,819.238285293],[0.692184018,0.144503582,0.692184018,-0.144503582],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_3_2_2_2:=[[1095.280204875,-46.518690971,1288.750291674],[0.707105059,0.707105059,-0.001560841,-0.001560841],[0,1,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_3_2_2:=[[1341.531107742,-655.105554555,1288.750291674],[0.707105059,0.707105059,-0.001560841,-0.001560841],[-1,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_3_3:=[[1127.492865404,-654.160627763,-775.136617159],[0.001560841,-0.001560841,-0.707105059,0.707105059],[-1,0,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_4:=[[1127.165721569,-806.63724957,-775.130617159],[0.001560841,-0.001560841,-0.707105059,0.707105059],[-1,0,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_6:=[[927.820811207,-653.279124198,-775.106617159],[0.001560841,-0.001560841,-0.707105059,0.707105059],[-1,0,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10_5:=[[927.131670899,-805.754147878,-775.160617159],[0.001560841,-0.001560841,-0.707105059,0.707105059],[-1,0,-2,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[1350.759690877,-682.265818786,-276.70838807],[0.541716338,0.614692345,0.408974553,-0.401791669],[-1,0,0,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    PROC main()
+        Path_recogida_bush;
+        Path_dejada_bush;
+
+    ENDPROC
+    PROC Path_recogida_bush()
+        MoveJ Target_10_3_2,v1000,z100,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_10_3,v500,fine,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_10,v200,fine,EF_Gripper\WObj:=WO_recogida_bush;
+        WaitTime 1;
+        MoveL Target_10_3,v500,fine,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_30,v500,z100,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_10_6,v500,fine,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_10_5,v500,fine,EF_Gripper\WObj:=WO_recogida_bush;
+        WaitTime 1;
+        MoveL Target_10_6,v500,fine,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_30,v500,z100,EF_Gripper\WObj:=WO_recogida_bush;
+        MoveL Target_10_3_2,v1000,z100,EF_Gripper\WObj:=WO_recogida_bush;
+    ENDPROC
+    PROC Path_dejada_bush()
+        MoveJ Target_20_2_2,v1000,z100,EF_Gripper\WObj:=WO_dejada_bush;
+        MoveL Target_20_2,v500,fine,EF_Gripper\WObj:=WO_dejada_bush;
+        MoveL Target_20,v500,fine,EF_Gripper\WObj:=WO_dejada_bush;
+        WaitTime 1;
+        MoveL Target_20_2,v500,fine,EF_Gripper\WObj:=WO_dejada_bush;
+        MoveJ Target_20_2_2,v500,z100,EF_Gripper\WObj:=WO_dejada_bush;
+        MoveJ Target_20_2_2_2,v1000,fine,EF_Gripper\WObj:=WO_dejada_bush;
+        WaitTime 19;
+    ENDPROC
+ENDMODULE
